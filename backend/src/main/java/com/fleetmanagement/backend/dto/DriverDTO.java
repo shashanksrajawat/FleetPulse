@@ -4,11 +4,10 @@ import com.fleetmanagement.backend.entity.DriverStatus;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@SuppressWarnings("unused")
 public record DriverDTO(
     Long id,
     Long userId,
-    String fullName, // Combined firstName and lastName
+    String fullName,
     String email,
     String licenseNumber,
     LocalDate licenseExpiryDate,
